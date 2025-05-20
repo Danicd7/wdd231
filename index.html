@@ -22,8 +22,8 @@
     </div>
         <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
         <nav class="nav">
-            <ul id="nav-list">
-                <li><a href="#" class="active">Home</a></li>
+            <ul>
+                <li><a href="https://danicd7.github.io/wdd231/index.html" class="active">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">Final</a></li>
                 <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
@@ -56,17 +56,20 @@
         </section>
     </div>
 
-        <section id="certificate">
+        <section class="card" id="Certificates">
             <div class="heading">
-            <h2>Certificate Courses</h2>
+                <h2>Web and Computer Programming Certificate</h2>
+                </div>
+
+                <div class="resources">
+                <button id="all" title=" All Courses">All Courses</button>
+                <button id="wdd" title="WDD Courses">WDD Courses</button>
+                <button id="cse" title="CSE Courses">CSE Courses</button>
             </div>
-            <div class="course-controls">
-                <button id="all-btn">All Courses</button>
-                <button id="wdd-btn">WDD Courses</button>
-                <button id="cse-btn">CSE Courses</button>
-            </div>
-            <div id="courses-container"></div>
-            <p>Total Credits: <span id="credit-count">0</span></p>
+
+                <section id="creditsSection"></section>
+                <section id="coursesList"></section>
+    
         </section>
 
     </main>
