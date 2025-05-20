@@ -164,22 +164,93 @@ section h2 {
 
 
 
-.course-card {
+.card {
     border: 1px solid #ccc;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: o;
+    margin: 5px;
     border-radius: 10px;
-    transition: background 0.3s;
+    box-shadow: 0 0 10px #aaa;
 }
 
-.course-card.completed {
-    background-color: #e0ffe0;
-    border-color: green;
+.card img {
+    padding: 5px;
+    margin: 0;
+    border-radius: 20px;
+    text-align: center;
 }
 
-.course-card.not-completed {
-    background-color: #ffe0e0;
-    border-color: red; }
+.card p {
+    padding: 10px;
+}
+
+figure {
+    padding: 0;
+    /* max-width: 220px; */
+    margin: 0;
+    text-align: center;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+
+}
+
+.resources>button {
+    font-weight: bold;
+}
+
+.resources button:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    transition: .3s;
+}
+
+#Certificates div {
+    text-align: center;
+}
+
+#Certificates button {
+    padding: .75rem;
+    margin: .5rem;
+    border: 1px solid #999;
+    border-radius: 10px;
+
+    animation: color_change 5s infinite alternate;
+}
+
+#courses_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#courses_list div {
+    padding: .75rem;
+    margin: .5rem;
+    border-radius: 10px;
+    border: 1px solid #999;
+    background-color: #dcecfa;
+}
+
+.complete {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.needed {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
 
 /* FOOTER */
 footer {

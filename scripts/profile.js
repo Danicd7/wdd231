@@ -1,18 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('.nav');
-
-    if (hamburger && nav) {
-        hamburger.addEventListener('click', () => {
-            nav.classList.toggle('open');
-        });
-    }
-
-    // Dynamic Year and Last Modified
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
-
-    // Course array
+   // Course array
     const courses = [
         {
             subject: 'CSE',
@@ -93,80 +79,58 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ]
 
+const credits = document.querySelector("#credits_section");
+const courses_list = document.querySelector("#courses_list");
 
+function displayCourses(filteredcourses) {
+    // Clear and update credits
+    credits.innerHTML = '';
+    const creditText = document.createElement('p');
+    const totalCredits = filteredcourses.reduce((acum, crs) => acum + crs.credits, 0);
+    creditText.innerHTML = `Total number of required credits: ${totalCredits}.`;
+    credits.appendChild(creditText);
 
-    // Set up filter buttons
-    document.querySelectorAll('[data-filter]').forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-            let filtered;
+    // Clear and display course list
+    courses_list.innerHTML = '';
+    filteredcourses.forEach(crs => {
+        const courseCard = document.createElement('div');
+        courseCard.className = crs.completed ? "complete" : "needed";
+     
 
-            switch (filter) {
-                case 'all':
-                    filtered = courses;
-                    break;
-                case 'wdd':
-                case 'cse':
-                    filtered = courses.filter(course => course.subject.toLowerCase() === filter);
-                    break;
-                case 'completed':
-                    filtered = courses.filter(course => course.completed);
-                    break;
-                case 'not-completed':
-                    filtered = courses.filter(course => !course.completed);
-                    break;
-                default:
-                    filtered = courses;
-            }
-
-            displayCourses(filtered);
-        });
+        // Enhanced display
+        courseCard.innerHTML = `
+            <h3>${crs.subject} ${crs.number} - ${crs.title}</h3>
+            <p><strong>Credits:</strong> ${crs.credits}</p>
+            <p><strong>Description:</strong> ${crs.description}</p>
+            <p><strong>Technologies:</strong> ${crs.technology.join(', ')}</p>
+        `;
+        courses_list.appendChild(courseCard);
     });
+}
+
+// Set up button handlers
+document.querySelector('#all').addEventListener('click', () => {
+    displayCourses(courses);
 });
 
+document.querySelector('#wdd').addEventListener('click', () => {
+    const result = courses.filter(course => course.subject === 'WDD');
+    displayCourses(result);
+});
 
-function displayCourses(courseArray) {
-    const container = document.querySelector('#courses-container');
-    const creditCount = document.querySelector('#credit-count');
-    const completedCreditCount = document.querySelector('#completed-credits');
-    container.innerHTML = '';
+document.querySelector('#cse').addEventListener('click', () => {
+    const result = courses.filter(course => course.subject === 'CSE');
+    displayCourses(result);
+});
 
-    courseArray.forEach((course, index) => {
-        const card = document.createElement('div');
-        card.className = `course-card ${course.completed ? 'completed' : 'not-completed'}`;
-        card.style.cursor = 'pointer';
+// Initial render
+displayCourses(courses);
 
-        card.innerHTML = `
-            <h3>${course.completed ? '✔ ' : ''}${course.subject} ${course.number}: ${course.title}</h3>
-            <p><strong>Credits:</strong> ${course.credits}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
-        `;
 
-        // Toggle completion on click
-        card.addEventListener('click', () => {
-            // Encuentra el índice original en el array "courses"
-            const originalIndex = courses.findIndex(c =>
-                c.subject === course.subject && c.number === course.number
-            );
-            if (originalIndex !== -1) {
-                courses[originalIndex].completed = !courses[originalIndex].completed;
-                displayCourses(courseArray); // redisplay with current filter
-            }
-        });
 
-        container.appendChild(card);
-    });
 
-    // Count courses shown
-    creditCount.textContent = courseArray.length;
 
-    // Count completed credits for current filtered view
-    const completedCredits = courseArray
-        .filter(course => course.completed)
-        .reduce((sum, course) => sum + course.credits, 0);
-    completedCreditCount.textContent = completedCredits;
-}
+
 
 
 
