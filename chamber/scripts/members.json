@@ -1,0 +1,67 @@
+{
+    "directory": [
+        {
+            "name": "Grupo Alava.",
+            "address": "789 Tech Street, Innovation City",
+            "phone": "915 679 700",
+            "url": "https://www.grupoalava.com/",
+            "image": "grupoalava_logo.jpg",
+            "membership": "Platinum",
+            "join": "1 year"
+        },
+        {
+            "name": "Ferritor.",
+            "address": "Avda. Democracia, nº 7",
+            "phone": "917 633 379",
+            "url": "http://www.ferritor.com/",
+            "image": "ferritor.png",
+            "membership": "Gold",
+            "join": "8 years"
+        },
+        {
+            "name": "Chemtex Manufacturing, Inc.",
+            "address": "C/ Orense, 16, 5°C",
+            "phone": "913 456 772",
+            "url": "https://www.chemtexglobal.com/",
+            "image": "chemtexglobal_logo.jpg",
+            "membership": "Silver",
+            "join": "3 years"
+        },
+        {
+            "name": "Intercomet S.L.",
+            "address": "Calle Cañada 15",
+            "phone": "91 658 26 00",
+            "url": "https://www.intercomet.com/",
+            "image": "logo_intercomet.png",
+            "membership": "Gold",
+            "join": "9 months"
+        },
+        {
+            "name": "Flowserve Spain S.L.",
+            "address": "5215 North OConnor Boulevard, Suite 700",
+            "phone": "916 604 600",
+            "url": "https://www.flowserve.com/en/",
+            "image": "Flowserve_logo.png",
+            "membership": "Bronze",
+            "join": "4 years"
+        },
+        {
+            "name": "Ruymor S.A.",
+            "address": "Avenida del Sol, 34. Pol. Industrial Las Monjas",
+            "phone": "91 675 17 54",
+            "url": "http://www.ruymor.com/index.html",
+            "image": "Ruymor.jpg",
+            "membership": "Silver",
+            "join": "3 months"
+        },
+        {
+            "name": "Uncovercity",
+            "address": "Calle de Velazquez 45",
+            "phone": "667889222",
+            "url": "https://uncovercity.com/?utm_source=GMB&utm_medium=web&utm_campaign=GMB",
+            "image": "unconvercity.jpeg",
+            "membership": "Platinum",
+            "join": "5 months"
+        }
+    ]
+}

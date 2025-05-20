@@ -185,12 +185,12 @@ footer {
 
 .business-cards.list {
     display: block;
-    }
+}
 
-        .business-cards.list .card {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 5px;
-            align-items: center;   }
-
+.business-cards.list .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
 
