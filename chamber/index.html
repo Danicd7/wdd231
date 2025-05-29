@@ -35,25 +35,58 @@
             Madrid<br>Chamber of Commerce
         </h1>
 
-        <button id="menu" aria-label="open menu"></button>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#" title="Home" class="active">Chamber</a></li>
+
+        <nav>
+            <button id="menu"></button>
+            <ul class="menulink">
+                <li><a href="https://danicd7.github.io/wdd231/chamber/index.html" title="Home"
+                        class="active">Chamber</a></li>
                 <li><a href="#" title="discovery">Discovery</a></li>
-                <li><a href="https://danicd7.github.io/wdd231/chamber/directory.html" title="directory">Directory</a></li>
+                <li><a href="https://danicd7.github.io/wdd231/chamber/directory.html" title="directory">Directory</a>
+                </li>
                 <li><a href="#" title="form">Join Us</a></li>
             </ul>
         </nav>
     </header>
+    <section class="hero">
+
+        <picture>
+            <source srcset="images/madrid_hero_small.webp" media="(max-width: 500px)">
+            <img src="images/madrid_hero_large.webp" alt="Gran via street" width="1500" height="1000">
+        </picture>
+        <button class="cta">join the chamber</button>
+    </section>
 
     <main>
-        <h2>Business Directory</h2>
-            <div class="view-directory">
-                <button id="grid">⏹️ Grid</button>
-                <button id="list">📄 List</button>
+        <h2>Home</h2>
+        <section class="info-panels">
+            <div class="panel events">
+                <h3>Events</h3>
+                <p></p>
             </div>
-            <section class="business-cards" id="directory"></section>
+            <div class="panel">
+                <h3>Current Weather</h3>
+                <div class="weather-info">
+                    <figure >
+                        <img id="weather-icon" src=" " alt="Weather icon" />
+                        <figcaption id="weather-description">Description</figcaption>
+                    </figure>          </div>
+            </div>
+            
+            <div class="panel" id="forecast">
+                <h3>Weather Forecast</h3>
+                <div class="forecast" id="forecast">
+                    <!-- Forecast temperatures will go here -->      </div>
+        </section>
+
+
+        <section class="spotlight">
+            <h3>Member Spotlights</h3>
+            <div id="spotlight-cards" class="spotlight-container"></div></section>
+
     </main>
+
+
     <footer>
         <div class="contact-info">
             <p><strong>Madrid<br>Chamber of Commerce</strong><br>

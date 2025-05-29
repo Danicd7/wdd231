@@ -224,6 +224,15 @@ figure {
     animation: color_change 5s infinite alternate;
 }
 
+@keyframes color_change {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: green;
+    } }
+
 #courses_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
