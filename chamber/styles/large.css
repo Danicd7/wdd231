@@ -16,6 +16,13 @@
         font-family: 'Roboto', sans-serif;
     }
 
+        .info-panels {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
     .contact-info,
     .project-info {
         margin-left: 0;
