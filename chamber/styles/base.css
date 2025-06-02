@@ -32,10 +32,16 @@ header h1 {
 h1,
 h2,
 h3,
-h4,
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
+    color: #445ba9;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color:#292929;
 }
 
 #menu::before {
@@ -60,6 +66,9 @@ h5 {
     right: 2vw;
 }
 
+h2 {
+    margin: 1rem;
+}
 
 ul.menulink li a {
     display: block;
@@ -71,7 +80,7 @@ ul.menulink li a {
 }
 
 .active {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 
 }
 
@@ -81,7 +90,7 @@ ul.menulink {
 }
 
 ul.menulink.open {
-display: block;
+    display: block;
 }
 
 .navigation a:hover {
@@ -95,7 +104,7 @@ display: block;
 }
 
 li.active a {
-    color: rgba(0,0,0,0.2);
+    color: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -107,9 +116,11 @@ body {
 }
 
 
-.weather-info,.panel p, .forecast {
-   padding: 0.5rem;
-   
+.weather-info,
+.panel p,
+.forecast {
+    padding: 0.5rem;
+
 }
 
 
@@ -124,7 +135,7 @@ main {
 
 .info-panels {
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 2rem;
 }
@@ -150,13 +161,14 @@ main {
 .spotlight-card img {
     width: 100px;
     height: auto;
-    object-fit: contain; }
+    object-fit: contain;
+}
 
 
 .panel {
     background: white;
     border: 1px solid #ccc;
-    
+
 }
 
 .panel h3 {
@@ -320,3 +332,154 @@ footer {
     align-items: center;
 }
 
+/*----------- FORM --------------*/
+.bodyForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h1Form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 20rem;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    -webkit-appearence: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem .5rem;
+    color: #555;
+}
+
+form label.sbs input {
+    padding: 0 .2rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+
+textarea {
+    width: 100%;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.membership-section {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #d4eae4;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in.delay1 {
+    animation-delay: 0.10s;
+}
+
+.fade-in.delay2 {
+    animation-delay: 0.8s;
+}
+
+.fade-in.delay3 {
+    animation-delay: 0.6s;
+}
+
+.fade-in.delay4 {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.join {
+    color: red;
+}
+
+.join-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: flex-start;
+}
+
+.form-section,
+.membership-section {
+    flex: 1 1 45%;
+    /* Grow/shrink, with a base width */
+    min-width: 300px;
+}
+
+/*-----------   DIRECTORY --------------*/
