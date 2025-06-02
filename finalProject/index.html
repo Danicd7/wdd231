@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Board Game Club & Resource Hub for enthusiasts to discover, learn, and connect over modern tabletop games: project for WDD 131." />
+    <meta name="author" content="Daniel Caetano" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/final.css" />
+    <script type="module" src="scripts/nav.js">defer</script>
+    <title>Board Game Club & Resource Hub</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🎲 Board Game Hub</a>
+            <button id="menu"></button>
+            <ul class="menulink">
+                <li><a href="reviews.html" title="Game Reviews" class="active">Game Reviews</a></li>
+                <li><a href="resources.html" title="Resources">Resources</a></li>
+                <li><a href="form.html" title="Join Us">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to the Board Game Club & Resource Hub</h1>
+            <p>
+                Discover new board games, read strategy guides, explore tutorials, and
+                connect with fellow players in your area. Whether you're a beginner or a
+                veteran gamer, this site offers a space to learn, share, and play.
+            </p>
+            <picture>
+                <source srcset="images/boardgames_small.webp" alt="boardgames" media="(max-width: 500px)">
+                <img src="images/boardgames_medium.webp" alt="boardgames" width="1000" height="500" loading="lazy" decoding="async">
+                </picture>
+        </section>
+
+        <section class="features">
+            <h2>What You'll Find Here</h2>
+            <ul>
+                <li>🎯 In-depth reviews and game recommendations</li>
+                <li>📚 Strategy guides and beginner tutorials</li>
+                <li>📅 Calendar of local meetups and online events</li>
+                <li>📝 Blog posts from community members</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>WDD231 Class Final | Project Daniel Caetano<br>&copy; <span id="currentyear"></span> </p>
+        <p id="lastModified"></p>
+        <a href="#" target="_blank">Project Video</a>
+    </footer>
+</body>
+
+</html>

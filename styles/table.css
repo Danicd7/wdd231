@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+
+.myTable {
+    margin: 10px auto;
+    border-collapse: collapse;
+    border: thin solid hsla(0, 0%, 20%, .8);
+    width: 100%;
+}
+
+table {
+    margin: 0 auto;
+}
+
+
+th,
+td {
+    padding: 7px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #4CAF50;
+}
+
+th,
+td {
+    color: black;
+    padding: 7px 15px;
+    border: 1px solid hsla(0, 0%, 33%, .3);
+}
+
+th {
+    background-color: #f2f2f28d;
+    font-size: larger;
+}
