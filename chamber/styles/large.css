@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 64rem) {
 
     header {
         background-color: var(--primary);
@@ -16,12 +16,12 @@
         font-family: 'Roboto', sans-serif;
     }
 
-        .info-panels {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
+    .info-panels {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
 
     .contact-info,
     .project-info {
@@ -126,7 +126,37 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-      
+
     }
+
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #allplaces div {
+
+
+        grid-template-areas:
+            "name"
+            "img"
+            "description"
+            "address";
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 6px;
+    }
+
+
+
+
+
+
+
 
 }

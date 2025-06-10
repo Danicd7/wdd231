@@ -1,0 +1,15 @@
+@media screen and (min-width: 38rem) {
+    #allplaces div {
+
+
+
+        grid-template-areas:
+            "img name"
+            "img description"
+            "img address";
+    }
+
+    #allplaces div img {
+        width: 300px;
+    }
+}
