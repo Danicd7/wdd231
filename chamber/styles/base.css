@@ -60,7 +60,7 @@ h4 {
     cursor: pointer;
     width: 44px;
     text-align: right;
-    padding: .25rem 2w;
+    padding: .25rem 2vw;
     position: absolute;
     top: 1rem;
     right: 2vw;
@@ -72,10 +72,10 @@ h2 {
 
 ul.menulink li a {
     display: block;
-    padding: .75rem 2w;
+    padding: .75rem 2vw;
     text-decoration: none;
     color: #8B0000;
-    text-decoration-style: none;
+    text-decoration: none;
 
 }
 
@@ -486,7 +486,7 @@ form label.top input:required:valid {
 
 /*-----------   DISCOVERY --------------*/
 #allplaces div {
-    margin: 1 rem 8px;
+    margin: 1rem 8px;
     border: 1px solid #999;
     background-color: #eee;
     border-radius: 8px;
