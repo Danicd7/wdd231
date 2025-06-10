@@ -152,6 +152,15 @@
         border-radius: 6px;
     }
 
+    img:hover {
+        transform: scale(1.1);
+        opacity: 2;
+        box-shadow: 0 0 50px #333;
+
+    }
+
+
+
 
 
 
