@@ -29,9 +29,6 @@
         text-align: center;
     }
 
-    footer {
-        grid-template-columns: 1fr;
-
     }
 
     .social-icon1,
@@ -174,4 +171,3 @@
 
 
 
-}
