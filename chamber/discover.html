@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive Chamber of Commerce city discover page for WDD 231 by Daniel Caetano">
+    <meta name="description" content="Discover Madrid with the Chamber of Commerce. Explore top attractions and plan your visit.">
     <meta name="author" content="Daniel Caetano">
-    <title>discover - Madrid Chamber of Commerce</title>
+    <title>Discover - Madrid Chamber of Commerce</title>
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="discover the city">
-    <meta property="og:description"
-        content="Learn how to properly test social media metadata using Facebook's Sharing Debugger.">
+    <meta property="og:title" content="discover Madrid - Chamber of Commerce">
+    <meta property="og:description" content="Learn how to properly test social media metadata using Facebook's Sharing Debugger.">
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1564565899675-a159063d17be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
     <meta property="og:url" content="https://danicd7.github.io/wdd231/chamber/discover.html">
     <!-- End of Open Graph meta tags -->
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -27,6 +26,7 @@
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
     <script src="scripts/chamber.js" defer></script>
     <script src="scripts/menunav.js" defer></script>
+    <script src="scripts/pics.js" type="module" defer></script>
 </head>
 
 <body>
@@ -41,38 +41,46 @@
             <button id="menu"></button>
             <ul class="menulink">
                 <li><a href="index.html" title="Home">Chamber</a></li>
-                <li><a href="discover.html" title="discover" class="active">discover</a></li>
-                <li><a href="directory.html" title="directory">Directory</a></li>
-                <li><a href="join.html" title="form">Join Us</a></li>
+                <li><a href="discover.html" title="Discover the city" class="active">discover</a></li>
+                <li><a href="directory.html" title="Business directory">Directory</a></li>
+                <li><a href="join.html" title="Join the chamber">Join Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <aside id="visit-message" class="sidebar-message"></aside>
+        <aside id="visit-message" class="sidebar-message" aria-live="polite"></aside>
         <h2>Places to visit in Madrid</h2>
-        <section id="allplaces"></section>
+        <section id="allplaces" aria-label="Tourist Attractions"></section>
     </main>
 
     <footer>
         <div class="contact-info">
-            <p><strong>Madrid<br>Chamber of Commerce</strong><br>
+            <address>
+            <strong>Madrid<br>Chamber of Commerce</strong><br>
                 calle Templo 1<br>
                 Madrid, Spain 28030<br>
                 infoMchamber@gmail.org<br>
                 (0034) 666-555-2300</p>
+            </address>
+
         </div>
         <div class="social">
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin social-icon1"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter social-icon2"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube social-icon3"></i></a>
-        </div>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin social-icon1"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fab fa-twitter social-icon2"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <i class="fab fa-youtube social-icon3"></i> </a>
+            </div>
         <div class="project-info">
             <p>WDD231 Class Project<br>Daniel Caetano<br>&copy; <span id="currentyear"></span> Madrid Chamber of
                 Commerce<br></p>
             <p id="lastModified"></p>
         </div>
     </footer>
-    <script src="scripts/pics.js" type="module"></script>
 
 </body>
 
