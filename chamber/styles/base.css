@@ -407,9 +407,9 @@ form input.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 1 0 2rem 1%;
     width: 97%;
     max-width: 20rem;
+    box-sizing: border-box;
 }
 
 form input.submitBtn:hover {
