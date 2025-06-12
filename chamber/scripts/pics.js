@@ -7,7 +7,7 @@ places.forEach(place => {
 
     card.innerHTML = `
     <h2>${place.name}</h2>
-    <img src="${(place.img)}" alt="${place.name}">
+    <img src="${(place.img)}" alt="${place.name}" loading="lazy">
     <p>${place.description}</p>
     <address>${place.address}</address>
   `;
