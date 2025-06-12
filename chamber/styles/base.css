@@ -502,7 +502,7 @@ dialog::backdrop {
 .close-button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #bbb;
     color: black;
     border: none;
     border-radius: 5px;
@@ -512,7 +512,7 @@ dialog::backdrop {
 .open-button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #bbb;
     color: black;
     border: none;
     border-radius: 5px;
@@ -528,11 +528,11 @@ dialog {
 }
 
 .close-button:hover {
-    background-color: #0056b3;
+    background-color: #bbb;
 }
 
 .open-button:hover {
-    background-color: #0056b3;
+    background-color: #bbb;
 }
 
 
