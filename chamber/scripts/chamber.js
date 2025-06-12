@@ -1,4 +1,23 @@
+const openButtons = document.querySelectorAll(".open-button");
+const closeButtons = document.querySelectorAll(".close-button");
 
+openButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        const dialog = button.nextElementSibling;
+        if (dialog && typeof dialog.showModal === "function") {
+            dialog.showModal();
+        }
+    });
+});
+
+closeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const dialog = button.closest("dialog");
+        if (dialog) {
+            dialog.close();
+        }
+    });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // Hamburger menu
@@ -53,3 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     getMembers();
 });
+

@@ -45,6 +45,8 @@
 
     }
 
+
+
     ul.menulink,
     ul.menulink.open {
         display: flex;
@@ -52,11 +54,14 @@
     }
 
     ul.menulink li a {
-        display: block;
-        padding: 1rem;
+        display: none;
+        padding: 0rem;
+        text-align: center;
         text-decoration: none;
-        color: #8B0000;
-        text-decoration: none;
+        color: var(--secondary);
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+
     }
 
 

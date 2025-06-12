@@ -1,6 +1,6 @@
 :root {
-    --primary: rgba(50, 82, 136, 0.85);
-    --secondary: #8C1C13;
+    --primary: rgba(13, 20, 34, 0.85);
+    --secondary: #f07c73;
     --background: #f4f4f4;
     --color-neutral-dark: #555B6E;
     --color-accent-gold: #D4AF37;
@@ -35,13 +35,13 @@ h3,
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color: #445ba9;
+    color: #1a2442;
 }
 
 h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    color:#292929;
+    color: #292929;
 }
 
 #menu::before {
@@ -70,11 +70,10 @@ h2 {
     margin: 1rem;
 }
 
-ul.menulink li a {
+nav ul.menulink li a {
     display: block;
     padding: .75rem 2vw;
-    text-decoration: none;
-    color: #8B0000;
+    color: var(--secondary);
     text-decoration: none;
 
 }
@@ -93,13 +92,13 @@ ul.menulink.open {
     display: block;
 }
 
-.navigation a:hover {
+a:hover {
     background-color: #bbb;
-    color: #333;
+    color: #faf8f8;
     font-weight: 700;
 }
 
-.navigation.open a {
+.open a {
     display: block;
 }
 
@@ -336,7 +335,8 @@ img {
     aspect-ratio: 3 / 2;
     width: 100%;
     height: auto;
-    display: block; }
+    display: block;
+}
 
 
 
@@ -363,7 +363,7 @@ form fieldset {
 }
 
 form legend {
-    color: #445ba9;
+    color: #212c53;
     margin: 0 1rem;
     padding: 0 .5rem;
 
@@ -373,7 +373,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: #471409;
     font-size: .8rem;
 }
 
@@ -407,14 +407,19 @@ form input.submitBtn {
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
+    margin: 1 0 2rem 1%;
+    width: 97%;
     max-width: 20rem;
+}
+
+form input.submitBtn:hover {
+    background-color: var(--color-accent-green);
 }
 
 
 textarea {
     width: 100%;
+    border-radius: 0.2rem;
 }
 
 form label.top input:required {
@@ -490,6 +495,47 @@ form label.top input:required:valid {
     min-width: 300px;
 }
 
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.close-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.open-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    /* Center all content including the button */
+}
+
+.close-button:hover {
+    background-color: #0056b3;
+}
+
+.open-button:hover {
+    background-color: #0056b3;
+}
+
+
 /*-----------   DIRECTORY --------------*/
 
 /*-----------   DISCOVERY --------------*/
@@ -501,24 +547,28 @@ form label.top input:required:valid {
     overflow: hidden;
 
     display: grid;
-    grid-template-areas: 
-    "name"
-    "img"
-    "description"
-    "address";
+    grid-template-areas:
+        "name"
+        "img"
+        "description"
+        "address";
 }
+
 #allplaces div h2 {
     margin: 1rem 10px;
     grid-area: name;
 }
+
 #allplaces div img {
     width: 100%;
     grid-area: img;
 }
-#allplaces div p{
+
+#allplaces div p {
     margin: 1rem 10px;
     grid-area: description;
 }
+
 #allplaces div address {
     margin: 1rem 10px;
     grid-area: address;
@@ -529,4 +579,5 @@ form label.top input:required:valid {
     padding: 1rem;
     margin: 1rem;
     border-left: 4px solid #999;
-    font-style: italic; }
+    font-style: italic;
+}
