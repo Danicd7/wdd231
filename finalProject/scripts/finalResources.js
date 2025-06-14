@@ -10,7 +10,7 @@ async function getPlaces() {
         displayPlaces(data.places);
     } catch (err) {
         container.innerHTML = `<p>Error loading.</p>`;
-        console.error('Error fetching the data', err);
+        console.error('Error fetching the data, do something', err);
     }
 }
 
