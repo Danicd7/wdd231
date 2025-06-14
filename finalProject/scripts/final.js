@@ -51,3 +51,20 @@ rightArrow.addEventListener("click", () => {
 
 // Initialize on load
 showTestimonial(currentIndex);
+
+const openButtons = document.querySelectorAll('.open-button');
+const closeButtons = document.querySelectorAll('.close-button');
+
+openButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        const dialog = btn.nextElementSibling;
+        dialog.showModal();
+    });
+});
+
+closeButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const dialog = btn.closest('dialog');
+        dialog.close();
+    });
+});

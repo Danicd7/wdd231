@@ -7,13 +7,21 @@
     <meta name="description"
         content="Board Game Club & Resource Hub for enthusiasts to discover, learn, and connect over modern tabletop games: project for WDD 131." />
     <meta name="author" content="Daniel Caetano" />
+    <title>Board Game - Final project</title>
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Board Game - Final project">
+    <meta property="og:description"
+        content="Board Game Club & Resource Hub for enthusiasts to discover, learn, and connect over modern tabletop games: project for WDD 131.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1632501641765-e568d28b0015?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://danicd7.github.io/wdd231/finalproject/index.html">
+    <!-- End of Open Graph meta tags -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/final.css" />
     <script type="module" src="scripts/final.js">defer</script>
-    <title>Board Game - Final project</title>
 </head>
 
 <body>
@@ -48,12 +56,47 @@
         <section class="categories">
             <h2>Categories</h2>
             <div class="category-list">
-                <div class="category">Strategy</div>
-                <div class="category">Family</div>
-                <div class="category">Party</div>
-                <div class="category">Kids</div>
-            </div>
-        </section>
+        
+                <div class="category">
+                    <button class="open-button">Strategy</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Strategy Games</strong> challenge players to think ahead, plan multiple moves, and
+                            outmaneuver opponents. They often reward logic, tactics, and careful decision-making. Popular
+                            examples include Catan, Risk, and Razzia!</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+        
+                <div class="category">
+                    <button class="open-button">Family</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Family Games</strong> are designed to be accessible and fun for all ages. They usually have
+                            simple rules, quick setup, and encourage positive interaction. Great titles include Ticket to Ride
+                            and Plata.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+        
+                <div class="category">
+                    <button class="open-button">Party</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Party Games</strong> focus on fun, laughter, and group interaction. They're easy to learn,
+                            fast-paced, and work best with larger groups. Games like Unánimo or Codenames shine in these
+                            settings.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+        
+                <div class="category">
+                    <button class="open-button">Kids</button>
+                    <dialog class="dialog-box">
+                        <p><strong>Kids’ Games</strong> use vibrant visuals and simple mechanics to teach basic skills like
+                            memory, counting, or matching. Ideal for ages 3–10, with games like Candy Land and Rhino Hero.</p>
+                        <button class="close-button">Close</button>
+                    </dialog>
+                </div>
+        
+            </div></section>
         <section class="testimonials">
             <h2>What people are saying</h2>
             <div class="testimonial-slider">

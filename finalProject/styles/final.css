@@ -146,7 +146,7 @@ ul.menulink.open {
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -178,41 +178,102 @@ main {
 .categories {
     text-align: center;
     padding: 2rem 1rem;
+    background-color: #f9f9f9;
 }
 
 .category-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .category {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     animation: color_change 3s infinite alternate;
-    transition: transform 0.8s ease;
-    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 @keyframes color_change {
     from {
-        background-color: var(--primary);
+        background-color: var(--primary, #a1c4fd);
     }
 
     to {
-        background-color: var(--headings);
+        background-color: var(--headings, #c2e9fb);
     }
 }
 
 .category:hover {
-    transform: scale(1.9);
+    transform: scale(1.15);
+}
+
+
+dialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.open-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.open-button:hover {
+    color: #333;
+}
+
+
+.close-button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #999;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #666;
+}
+
+
+dialog p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
 }
 
 .testimonials {
@@ -308,10 +369,10 @@ form {
     padding: 1rem;
 }
 
-form h2{
+form h2 {
     max-width: 400px;
-        margin-left: 2rem;
-        padding: 1rem;
+    margin-left: 2rem;
+    padding: 1rem;
 }
 
 form fieldset {
@@ -552,19 +613,19 @@ form label.top input:required:valid {
 #allgames div p .description {
     margin: 1rem 10px;
     grid-area: description;
-  
+
 }
 
 #allgames div p .type {
     margin: 1rem 10px;
     grid-area: type;
-   
+
 }
 
 #allgames div p .strategy {
     margin: 1rem 10px;
     grid-area: strategy;
-    
+
 }
 
 #allgames .type,
@@ -574,10 +635,7 @@ form label.top input:required:valid {
 }
 
 .sidebar-message {
-    background-color: #f0f0f053;
-    padding: 0.6rem 1.2rem;
-    font-style: italic;
-    color: white;
+display: none;
 }
 
 
@@ -633,6 +691,71 @@ form label.top input:required:valid {
     }
 
     /****** HERO IMAGE ******/
+
+
+    .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+
+    }
+
+    .hero img {
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 1rem 1.5rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero1 {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        background-color: #333;
+        border: none;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: #eee;
+        font-weight: bold;
+    }
+
     /*.hero1 {
         display: inline-block;
         position: absolute;
@@ -684,6 +807,14 @@ form label.top input:required:valid {
             "description"
 
         ;
+    }
+
+    .sidebar-message {
+        display: inline-block !important;
+        background-color: #f0f0f053;
+        padding: 0.6rem 1.2rem;
+        font-style: italic;
+        color: white;
     }
 
 

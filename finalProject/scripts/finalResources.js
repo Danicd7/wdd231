@@ -9,8 +9,8 @@ async function getPlaces() {
         const data = await response.json();
         displayPlaces(data.places);
     } catch (err) {
-        container.innerHTML = `<p>Error loading directory.</p>`;
-        console.error('Error fetching members:', err);
+        container.innerHTML = `<p>Error loading.</p>`;
+        console.error('Error fetching the data', err);
     }
 }
 
