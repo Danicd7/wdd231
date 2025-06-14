@@ -73,7 +73,6 @@ h2 {
 nav ul.menulink li a {
     display: block;
     padding: .75rem 2vw;
-    color: var(--secondary);
     text-decoration: none;
 
 }
@@ -336,30 +335,6 @@ footer {
 
 
 
-.view-directory {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.view-directory button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    border: 1px solid #333;
-    background: #fff;
-}
-
-.business-cards.list {
-    display: block;
-}
-
-.business-cards.list .card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
-    align-items: center;
-}
 
 img {
     aspect-ratio: 4 / 3;
@@ -567,6 +542,30 @@ dialog {
 
 
 /*-----------   DIRECTORY --------------*/
+.view-directory {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.view-directory button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #333;
+    background: #fff;
+}
+
+.business-cards.list {
+    display: block;
+}
+
+.business-cards.list .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
 
 /*-----------   DISCOVER --------------*/
 #allplaces div {

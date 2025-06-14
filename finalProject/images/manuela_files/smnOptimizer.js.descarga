@@ -1,0 +1,2 @@
+!function(){"use strict";let t=class t{static optimizeCriticalPathCSSRemoval(){let e=document.getElementById("rocket-critical-css");null!==e&&(e.setAttribute("id","rocket-critical-css-mod"),window.addEventListener("load",()=>{setTimeout(()=>{document.getElementById("rocket-critical-css-mod").remove()},t.criticalCssDeletionTimeout)}))}};t.criticalCssDeletionTimeout=6e3,t.optimizeCriticalPathCSSRemoval()}();
+//# sourceMappingURL=smnOptimizer.js.map

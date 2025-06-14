@@ -1,0 +1,46 @@
+
+{"places": [
+    {
+        "name": "Café Manuela",
+        "location": "San Vicente Ferrer 29, Malasaña, Madrid, Spain",
+        "description": "Vintage-style café full of board games like Connect Four and Mastermind; lively atmosphere with occasional live music.",
+        "website": null,
+        "img": "Cafe_Manuela.webp"
+    },
+    {
+        "name": "Epic Board Game Café",
+        "location": "Calle Los Vascos 3, Chamberí, Madrid, Spain",
+        "description": "Ludo-bar with over 1,000 games and 'gurus' to help choose and explain rules; €3 per person to play.",
+        "website": null,
+        "img": null
+    },
+    {
+        "name": "Black Mamba (Board Game Bar Night)",
+        "location": "Costanilla de San Pedro 5, La Latina, Madrid, Spain",
+        "description": "Hosts a weekly Board Game Bar Night every Wednesday at 8pm—play classics and party games with special drink deals.",
+        "website": null,
+        "img": null
+    },
+    {
+        "name": "Six Board Games Café",
+        "location": "Av. de la Ciudad de Barcelona 180, Pacífico, Madrid, Spain",
+        "description": "Venue with approximately 1,000 games; entry fee (~€3.50) and minimum drink/food purchase required.",
+        "website": "https://www.six.es/",
+        "img": "sixBoard.webp"
+    },
+    {
+        "name": "Cofradía del Dragón",
+        "location": "Moratalaz, Madrid, Spain",
+        "description": "Free board game association with ~180 games and RPG manuals, meeting 4 days a week at municipal centers.",
+        "website": "https://cofradiadragon.com/",
+        "img": "cofradiaDragon.png"
+    },
+    {
+        "name": "Replay Outlet Boardgame Café",
+        "location": "C. Ribera de Curtidores 26, Centro, Madrid, Spain",
+        "description": "Board game café with over 2,000 games and regular meetups via Meetup.com.",
+        "website": "https://www.replayoutletcafe.com/",
+        "img": "replay.webp"
+    }
+]
+}

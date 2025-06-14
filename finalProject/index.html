@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico"  />
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/final.css" />
-    <script type="module" src="scripts/nav.js">defer</script>
+    <script type="module" src="scripts/final.js">defer</script>
     <title>Board Game - Final project</title>
 </head>
 
@@ -22,72 +22,78 @@
             <a href="index.html" class="logo">🎲 Board Game Hub</a>
             <button id="menu"></button>
             <ul class="menulink">
-                <li><a href="reviews.html" title="Game Reviews" class="active">Game Reviews</a></li>
+                <li><a href="index.html" title="main page" class="active">Home</a></li>
+                <li><a href="reviews.html" title="Game Reviews">Game Reviews</a></li>
                 <li><a href="resources.html" title="Resources">Resources</a></li>
                 <li><a href="form.html" title="Join Us">Join Us</a></li>
             </ul>
         </nav>
     </header>
+    <section class="hero">
+        <div class="overlay"></div>
+        <picture>
+            <source srcset="images/boardgames_small.webp" alt="paella" media="(max-width: 500px)">
+            <img src="images/heroLarge.webp" alt="Gran via street" width="1500" height="1000">
+        </picture>
+        <div class="hero-content">
+            <h1>Discover your next<br>favorite board game</h1>
+            <div class="hero-buttons">
+                <a href="reviews.html" class="btn">Browse Game</a>
+                <a href="resources.html" class="btn">Learn More</a>
+            </div>
+        </div>
+        <button class="hero1"><a href="form.html">join the chamber</a></button>
+    </section>
     <main>
-        <div class="section">
-            <h1>Site Name & Logo</h1>
-            <div>BoardGame Madrid club</div>
-            <p><strong>Why this name?</strong> BoardGame Madrid club will serve as an informational and community space for
-                board game enthusiasts in Madrid.
-            </p>
-            <p><strong>Optional domain:</strong> boardGameM.es</p>
-        </div>
-    
-        <div class="section">
-            <h2>Site Purpose</h2>
-            <p>The website will serve as an informational and community space for board game enthusiasts. It will include
-                game reviews,
-                strategy guides, tutorials for beginners, recommendations by game type (party, strategy, cooperative, etc.),
-                a calendar
-                of local meetups or events, and a blog where members can share experiences or game night recaps. It may also
-                feature
-                spotlights on unique or indie games.</p>
-        </div>
-    
-        <div class="section">
-            <h2>Scenarios</h2>
-            <ul>
-                <li>How can I became a member?</li>
-                <li>Where can I participate on tournaments?</li>
-            </ul>
-        </div>
-    
-        <div class="section">
-            <h2>Color Schema</h2>
-            <ul>
-                <li><strong>#4b3f72 (dark purple):</strong> Main color.</li>
-                <li><strong>#2e8b57 (Forest Green):</strong> Used for headings, logo, buttons.</li>
-                <li><strong>#f4f4f4 (Light Gray):</strong> Used as the background for contrast and readability.</li>
-            </ul>
-        </div>
-    
-        <div class="section">
-            <h2>Typography</h2>
-            <ul>
-                <li><strong>Roboto:</strong> Will be the only Typography </li>
-            </ul>
-        </div>
-    
-        <div class="section wireframe">
-            <h2>Wireframe</h2>
-            <a href="https://www.figma.com/design/Fdbg5HIkvPFpjsJ5we64cM/Untitled?node-id=1-59&t=igkgxPXl4B0wzB8H-1">Mobile
-                View</a>
-    
-            <a href="https://www.figma.com/design/Fdbg5HIkvPFpjsJ5we64cM/Untitled?node-id=0-1&t=igkgxPXl4B0wzB8H-1">Desktop
-                View</a>
-    
-        </div>
-    </main>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category">Strategy</div>
+                <div class="category">Family</div>
+                <div class="category">Party</div>
+                <div class="category">Kids</div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2>What people are saying</h2>
+            <div class="testimonial-slider">
+                <button class="arrow left">&#8592;</button>
 
+                <div class="testimonial" id="testimonial">
+                    <p class="quote">"Board Game Hub helped me discover amazing games for family night!"</p>
+                    <p class="author">— Sarah L.</p>
+                </div>
+
+                <button class="arrow right">&#8594;</button>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>WDD231 Class Final | Project Daniel Caetano<br>&copy; <span id="currentyear"></span> </p>
-        <p id="lastModified"></p>
-        <a href="#" target="_blank">Project Video</a>
+        <div class="contact-info">
+            <address>
+                <a href="index.html" class="logo">🎲 Board Game Hub</a>
+                calle Templo 1<br>
+                Madrid, Spain 28030<br>
+                infoBoardGame@gmail.org<br>
+                (0034) 666-555-2300</p>
+            </address>
+
+        </div>
+        <div class="social" id="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.svg" alt="Facebook Logo" class="social1">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.svg" alt="Instagram Logo" class="social2">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter Logo" class="social3"> </a>
+        </div>
+        <div class="project-info">
+            <p>WDD231 Class Final Project<br>Daniel Caetano<br>&copy; <span id="currentyear"></span> Board Game Hub
+                website<br></p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
